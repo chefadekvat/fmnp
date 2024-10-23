@@ -1,0 +1,10 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+vsc-extension-quickstart.md
+eslint.config.mjs
+.vscodeignore
+.vscode-test.mjs
+.vscode/
