@@ -3,14 +3,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as childProcess from 'child_process';
 
-// 1. m - move file (source - dest) +
-// 2. c - copy file (source - dest) +
-// 3. d - delete file (source) +
-// 5. nd - new directory (source) +
-// 6. nf - new file (source) +
-// 7. o - open file in editor (source) +
-// 8. np - new project (name) 
-
 export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand('fmnp.shell', async () => {
 		const input = await vscode.window.showInputBox({
