@@ -40,10 +40,13 @@ Clone this repository:
 ```sh
 git clone https://github.com/chefadekvat/fmnp
 ```
-
+Install all necessary dependancies:
+```sh
+cd fmnp && npm install .
+```
 You can use vsce to package an extension:
 ```sh
-cd fmnp && vsce package
+vsce package
 ```
 Now you you have .vsix package, which you can install to vscode
 ```sh
