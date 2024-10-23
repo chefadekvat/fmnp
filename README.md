@@ -3,7 +3,7 @@
 
 fmnp – vscode extension, that provides simple and fast file manipulations in your projects.
 
-# Usage:
+# Usage
 Type Ctrl+P to open vscode commands and search "fmnp" there or assign a shortcut to it.
 
 File directories are calculated relative to a file, opened in editor, or to root of the project if any project is opened.
