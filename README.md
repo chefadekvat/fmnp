@@ -1,71 +1,52 @@
-# fmnp README
+# fmnp
+Выполнил Логинов Георгий Дмитриевич M3100.
 
-This is the README for your extension "fmnp". After writing up a brief description, we recommend including the following sections.
+fmnp – vscode extension, that provides simple and fast file manipulations in your projects.
 
-## Features
+# Usage:
+Type Ctrl+P to open vscode commands and search "fmnp" there or assign a shortcut to it.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+File directories are calculated relative to a file, opened in editor, or to root of the project if any project is opened.
 
-For example if there is an image subfolder under your extension project workspace:
+List of available commands:
+```
+m <source> <destination> # moves a file from source to destination
+```
+```
+c <source> <destination> # copies a file from source to destination
+```
+```
+d <path> # deletes a file 
+```
+```
+nd <path> # makes a new directory
+```
+```
+nf <path> # makes a new file
+```
+```
+o <path> # opens a file in editor
+```
+```
+np <name> # makes a new project in user's home folder
+```
+# Building
+Make sure you have Node.js installed, then run:
+```sh
+npm install -g @vscode/vsce
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+Clone this repository:
+```sh
+git clone https://github.com/chefadekvat/fmnp
+```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+You can use vsce to package an extension:
+```sh
+cd fmnp && vsce package
+```
+Now you you have .vsix package, which you can install to vscode
+```sh
+code --install-extension ./fmnp-<version>.vsix
+```
+Enjoy!
