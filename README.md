@@ -1,6 +1,4 @@
 # fmnp
-Выполнил Логинов Георгий Дмитриевич M3100.
-
 fmnp – vscode extension, that provides simple and fast file manipulations in your projects.
 
 # Usage
